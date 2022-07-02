@@ -1,0 +1,3 @@
+[submodule "TechnicalTest_Yopidoya"]
+	path = TechnicalTest_Yopidoya
+	url = git@github.com:vranha/TechnicalTest_Yopidoya.git

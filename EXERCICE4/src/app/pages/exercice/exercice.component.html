@@ -1,0 +1,24 @@
+<h1 class="firstText">Click 1 of them</h1>
+<div class="containerImages">
+  <div (click)="getContributors('Yopidoya','YOPIDOYA-Technical-Test')">
+    <img src="https://avatars.githubusercontent.com/u/108335468?s=200&v=4" alt="yopidoyaImg">
+  </div>
+  <div (click)="getContributors('brelats', 'ParkourSkills')">
+    <img src="https://avatars.githubusercontent.com/u/49074525?v=4" alt="brelatsImg">
+  </div>
+  <div (click)="getContributors('vranha', 'CocktailsClub-web-React')">
+    <img src="https://avatars.githubusercontent.com/u/95522649?v=4" alt="vranhaImg">
+  </div>
+</div>
+
+<h1 class="firstText"> Or search what you want</h1>
+
+<app-form (getContributorsForm)="getContributors($event.owner, $event.repo)" [contributors]="contributors"></app-form>
+
+<ng-container *ngIf="!isData; else elseTemplate">
+<h3 class="another">Your search has no results.😥 </h3>
+</ng-container>
+
+<ng-template #elseTemplate>
+<app-contributors id="contr" [contributors]="contributors" [repo]="repo"></app-contributors>
+</ng-template>

@@ -1,0 +1,32 @@
+.firstText{
+  text-align: center;
+  color:rgb(197, 76, 161);
+  cursor: default;
+}
+
+.containerImages{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin:40px;
+
+  div{
+    height: 200px;
+    cursor: pointer;
+
+    img{
+      height: 100%;
+      border-radius: 15px;
+    }
+  }
+}
+
+.another{
+  font-size:25px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+
+

@@ -1,0 +1,11 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label>Owner</label>
+    <input type="text" class="form-control" formControlName="owner" placeholder="SpiderCerdo">
+  </div>
+  <div class="form-group">
+    <label>Repo</label>
+    <input type="text" class="form-control" formControlName="repo" placeholder="WeatherApp">
+  </div>
+  <button>Search</button>
+</form>
